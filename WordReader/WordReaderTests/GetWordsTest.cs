@@ -11,7 +11,7 @@ namespace WordReaderTests
     {
         private readonly string _path =
             Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) ?? string.Empty,
-                @"Resources\randomtext.txt");
+                "Resources", "randomtext.txt");
 
         [TestCase('a', 62)]
         [TestCase('b', 25)]
